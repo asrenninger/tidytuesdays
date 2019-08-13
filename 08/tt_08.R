@@ -40,7 +40,7 @@ for (i in 275:nrow(crosswalk)){
     slice(index) %>%
     pull(city) 
   
-  location <- google_geocode(city, key = "AIzaSyATZNqcW_htUb8P6ZgBV9nOMcnvkk5jNI0")
+  location <- google_geocode(city, key = "YOURKEY")
   
   located  <- tibble(city = city, 
                      address = c(location$results$formatted_address),
