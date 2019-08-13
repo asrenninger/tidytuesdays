@@ -125,7 +125,7 @@ for (i in 476:length(unique(cities$location))){
   
   city <- as.character(unique(cities$location)[index])
   
-  location <- google_geocode(city, key = "AIzaSyATZNqcW_htUb8P6ZgBV9nOMcnvkk5jNI0")
+  location <- google_geocode(city, key = "YOURKEY")
   
   located  <- tibble(city = city, 
                      name = c(location$results$formatted_address),
